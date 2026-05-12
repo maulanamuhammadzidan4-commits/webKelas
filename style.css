@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --warna-biru-kelas: #007bff;
+    --warna-putih-kelas: #f0f0f0;
+    --warna-hitam-kelas: #030303;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--warna-putih-kelas);
+    color: var(--warna-hitam-kelas);
+}
+
+.header-navbar {
+    background-color: var(--warna-biru-kelas);
+    color: var(--warna-putih-kelas);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-navbar h1 {
+    font-size: 24px;
+    color: var(--warna-putih-kelas);
+}
+
+.header-navbar nav a {
+    color: var(--warna-putih-kelas);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.header-navbar nav a:hover {
+    text-decoration: underline;
+}
+
+.logo-kelas img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.logo-kelas img:hover {
+    transform: scale(1.1);
+}
